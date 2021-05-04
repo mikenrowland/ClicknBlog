@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Blog Posts{% endblock title %}
+
+{% block content %}
+<header>
+  <div class="jumbotron">
+    <h2 class="display-5">Blog Posts</h2>
+    <p class="lead">Read all your favourite posts here</p>
+  </div>
+</header>
+{% for post in object_list %}
+<div class="card">
+    <div class="card-header">
+    <span class="font-weight-bold"><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></span> &middot;
+    <span class="text-muted">by {{ post.author }} | {{ post.date }}</span>
+    <p>{{ object.body }}</p>
+    </div>
+</div>
+{% endfor %}
+{% endblock content %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h5>Delete Post</h5>
+    <form action="" method="post">
+        {% csrf_token %}
+        <p>Are you sure you want to delete "{{ post.title }}"?</p>
+        <button class="btn btn-danger ml-2" type="submit">Confirm</button>
+    </form>
+    <br \>
+    <a href="{% url 'post_detail' post.pk %}">Back</a>
+{% endblock %}
