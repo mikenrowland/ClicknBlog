@@ -1,1 +1,1 @@
-web: waitress-serve --listen=127.0.0.1 env_vars.wsgi:application
+web: waitress-serve --listen=*:8000 env_vars.wsgi:application
