@@ -142,6 +142,8 @@ EMAIL_PORT = 2525
 EMAIL_HOST_USER = 'myclicknblog@gmail.com'
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 EMAIL_USE_TLS = True
+
+
 DEFAULT_FROM_EMAIL = 'myclicknblog@gmail.com'
 
 
