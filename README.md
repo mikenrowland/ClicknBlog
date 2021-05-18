@@ -29,4 +29,6 @@ vii. prepare app for deployment on heroku, ensure to hide secret-key using .env
 
 ix. create procfile
 
-x. run app on web using 'waitress' (for windows)
+x. run app on web using 'waitress' (for windows) #see procfile#
+
+xi. to add elasticemail as a smtp service, create an account at elasticemail.com, select the "connect to smtp API" option and create your unique API password. Then input password accordingly in the EMAIL_HOST_PASSWORD field in the settings.py file.
